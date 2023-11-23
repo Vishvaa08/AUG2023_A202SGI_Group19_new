@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Points"
+        android:background="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/labelCurrentPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="131dp"
+        android:textAlignment="center"
+        android:text="Current Points"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/tvCurrentPoints"
+        android:layout_below="@+id/labelCurrentPoints"
+        android:background="@drawable/custom_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:hint="0"/>
+
+    <TextView
+        android:id="@+id/labelNewPoints"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCurrentPoints"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:text="Add Points"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/etPoints"
+        android:hint="Points"
+        android:layout_below="@+id/labelNewPoints"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/custom_input"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnConfirmPoints"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etPoints"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="81dp"
+        android:textColor="@color/white"
+        android:background="@drawable/confirm_add_button"
+        android:text="Confirm add" />
+
+</RelativeLayout>

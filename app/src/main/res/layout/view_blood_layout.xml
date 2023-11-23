@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/bloodPic"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:id="@+id/labelDonorName"
+        android:text="Donor Name :"
+        android:textStyle="bold"
+        android:textColor="@color/dark_gray"
+        android:layout_toRightOf="@id/bloodPic"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tvDonorName"
+        android:hint="Donor Name"
+        android:layout_toRightOf="@id/bloodPic"
+        android:layout_below="@id/labelDonorName"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:id="@+id/labelDonorAge"
+        android:text="Donor Age :"
+        android:textStyle="bold"
+        android:textColor="@color/dark_gray"
+        android:layout_toRightOf="@id/bloodPic"
+        android:layout_below="@id/tvDonorName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tvDonorAge"
+        android:hint="Donor Age"
+        android:layout_toRightOf="@id/bloodPic"
+        android:layout_below="@id/labelDonorAge"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:id="@+id/labelHospital"
+        android:textStyle="bold"
+        android:textColor="@color/dark_gray"
+        android:text="Hospital :"
+        android:layout_toRightOf="@+id/bloodPic"
+        android:layout_below="@+id/tvDonorAge"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/tvHospital"
+        android:hint="Hospital"
+        android:layout_toRightOf="@+id/bloodPic"
+        android:layout_below="@id/labelHospital"
+        android:layout_marginStart="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:layout_below="@+id/bloodPic"
+        android:background="@color/black"/>
+
+</RelativeLayout>

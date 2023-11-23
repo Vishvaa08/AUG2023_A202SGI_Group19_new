@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "382474902594",
+    "firebase_url": "https://blood-unity-52cfd-default-rtdb.firebaseio.com",
+    "project_id": "blood-unity-52cfd",
+    "storage_bucket": "blood-unity-52cfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382474902594:android:28c25ace619bb3239ea1db",
+        "android_client_info": {
+          "package_name": "com.example.bloodunity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG78JzBqsymxzuFxLIeqqRwXaBZ399zno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".homepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_header"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/pic1"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bu1"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/pic2"
+                android:layout_below="@+id/pic1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bu2"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/pic3"
+                android:layout_below="@+id/pic2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bu3"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:id="@+id/pic1Title"
+                android:layout_toRightOf="@+id/pic1"
+                android:layout_marginTop="70dp"
+                android:text="Who Can Donate Blood ?"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="100dp"
+                android:id="@+id/pic1Text"
+                android:layout_toRightOf="@+id/pic1"
+                android:layout_below="@+id/pic1Title"
+                android:text="In most states, donors must be age 17 or older. Donors must weigh at least 50kg and be in good health."
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:id="@+id/pic2Title"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/pic1Text"
+                android:layout_marginTop="20dp"
+                android:text="How Often Can You Donate ?"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="100dp"
+                android:id="@+id/pic2Text"
+                android:layout_toRightOf="@+id/pic2"
+                android:layout_below="@+id/pic2Title"
+                android:text="You must wait at least 8 weeks between donations of whole blood and 16 weeks between Power Red donations."
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:id="@+id/pic3Title"
+                android:layout_toRightOf="@+id/pic3"
+                android:layout_below="@+id/pic2Text"
+                android:layout_marginTop="20dp"
+                android:text="How Long Is The Process ?"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="100dp"
+                android:id="@+id/pic3Text"
+                android:layout_toRightOf="@+id/pic3"
+                android:layout_below="@+id/pic3Title"
+                android:text="The entire process takes about an hour and fifteen minutes, the actual donation of blood takes about 8 to 10 minutes."
+                android:layout_marginStart="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+        <include layout="@layout/main_navigation_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
